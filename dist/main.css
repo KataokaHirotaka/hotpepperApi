@@ -1,14 +1,3 @@
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/index.scss ***!
-  \**************************************************************************************************************/
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+*,:after,:before{box-sizing:border-box;margin:0;padding:0}.selectAreaWrapper .selectArea-ttl{font-size:28px;text-align:center}
 
-body {
-  margin-top: 80px;
-}
+/*# sourceMappingURL=main.css.map*/

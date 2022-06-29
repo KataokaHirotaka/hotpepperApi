@@ -14,7 +14,7 @@ class GourmandSearch {
     // 位置情報を取得
     const geolocation = navigator.geolocation;
     if (geolocation) {
-      this.status.textContent = "位置情報を取得中";
+      // this.status.textContent = "位置情報を取得中";
       const localInfo = geolocation.getCurrentPosition(this.success);
       console.log(localInfo);
     } else {
@@ -36,10 +36,6 @@ class GourmandSearch {
     return localInfo;
     // const searchData = this.fetchSearchData(localInfo);
     // console.log(searchData);
-  }
-
-  test() {
-    console.log("yaaaaaaaaa");
   }
 
   fetchSearchData(localInfo) {

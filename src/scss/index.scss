@@ -1,7 +1,86 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import "./mixin";
+
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  @include mq(small) {
+    background-color: #f9efe7;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 10px 0;
+  .header-ttl {
+  }
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+// ==========都道府県セレクトエリア=========
+// =======================================
+.selectAreaWrapper {
+  @include mq(small) {
+    background-color: #fff;
+  }
+  .selectAreaInner {
+    @include mq(small) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .selectArea-ttl {
+    padding: 10px 0;
+    border-top: 1px solid #e41a12;
+    border-bottom: 1px solid #e41a12;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  .selectAreaList-wrapper {
+    background-color: #dadad4;
+    .regionAreaWrapper {
+      .regionAreaList {
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(0px 0px);
+      }
+    }
+  }
+  .selectAreaList-txt {
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .selectArea-list {
+    @include mq(small) {
+      display: flex;
+    }
+    .globalAreaList {
+      ul {
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        // display: none;
+      }
+    }
+  }
 }

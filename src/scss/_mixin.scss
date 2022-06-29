@@ -1,0 +1,12 @@
+$breakpoint-up: (
+  "tab": "screen and (min-width: 560px)",
+  "small": "screen and (min-width: 960px)",
+  "pcLarge": "screen and (min-width: 1280px)",
+  "pc": "screen and (min-width: 1280px)",
+) !default;
+
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
